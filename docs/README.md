@@ -76,6 +76,49 @@ Each map answers a specific question and contributs to the overall analysis.
 - Raster analysis tools.
 - Vector overlay and spatial queries.
 
+## Project (Structure)
+This project follows a structured workflow to seperate raw data, processing steps and final outputs.
+
+The original working structure is organzed as follows:
+
+- __data/__
+  Contains all datasets used in the analysis
+  - raw/ &rarr; original input data (DEM, buildings, population, etc.)
+  - interim/ &rarr; intermediate outputs generated during processing.
+  - processed/ &rarr; cleaned and final datasets used in analysis.
+- __qgis/__
+  Contains the QGIS project file used to perform the analysis and generate maps.
+- __outputs/__
+  Contains all final outputs
+  - maps/ &rarr; final map layouts exported as images
+  - figures/ &rarr; supporting visuals
+  - tables/ &rarr; summarized results
+- __docs/__
+  Contains project documentation, including this README
+
+### Repository Note
+Due to the file size limitations, the full dataset is not included in this repository. The GitHub version contains ony the final outputs and project files necessary to understand and reproduce the analysis workflow.
+
+## Data Access & Reproducibility
+### Data Access
+The complete dataset used in this project (~1.7 GB) is hosted externally due to GitHub storage limitations.
+You can access the data here:
+[Google Drive Link here]
+
+### Reproducibility
+To reproduce the analysis:
+1. Download the full dataset from the link above.
+2. Place the data folder in the root project directory so that the structure matches the original layout.
+3. Open QGIS project file located in the ```qgis./```folder.
+4. Ensure all data paths are correctly linked (you may need to relink layers if paths change).
+
+### Notes
+- The analysis was conducted using __QGIS 3.40__.
+- Raster and vector processing tools were used to generate susceptibility, exposure and hotspot layers.
+- Intermediate datasets are included in the external data package for transparency and reproducibility.
+
+
+
 ## Conclusion
 
 Flood risk in Nairobi County is shaped by the interaction between terrain, river systems and human settlement patterns. While some areas have high total exposure, smaller, densely populated regions face more intense localized vulnerability.
