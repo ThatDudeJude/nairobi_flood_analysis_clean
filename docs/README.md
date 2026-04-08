@@ -109,7 +109,7 @@ You can access the data here: [Nairobi Flood Analysis Files](https://drive.googl
 To reproduce the analysis:
 1. Download the full dataset from the link above.
 2. Place the data folder in the root project directory so that the structure matches the original layout.
-3. Open QGIS project file located in the ```qgis./```folder.
+3. Open QGIS project file located in the ```qgis/```folder.
 4. Ensure all data paths are correctly linked (you may need to relink layers if paths change).
 
 ### Notes
