@@ -41,7 +41,7 @@ Population exposure was estimated by combining flood susceptibility zones with g
 - NoData values were handled and filled appropriately.
 - Population within flood-prone areas was calculated
 
-Results show that approximately 3.2 million people are xposed to flood risk, with around 277,000 in high-risk zones.
+Results show that approximately 3.2 million people are exposed to flood risk, with around 277,000 in high-risk zones.
 
 ## Hotspot Analysis
 Hotspots were identified by combining:
@@ -102,8 +102,8 @@ Due to the file size limitations, the full dataset is not included in this repos
 ## Data Access & Reproducibility
 ### Data Access
 The complete dataset used in this project (~1.7 GB) is hosted externally due to GitHub storage limitations.
-You can access the data here:
-[Google Drive Link here]
+You can access the data here: [Nairobi Flood Analysis Files](https://drive.google.com/drive/folders/1SZaQwstIExvcp7Cj0GFstHHGzk7LuOLP?usp=sharing)
+ 
 
 ### Reproducibility
 To reproduce the analysis:
