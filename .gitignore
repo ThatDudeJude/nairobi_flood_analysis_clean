@@ -1,0 +1,15 @@
+# Data
+data/
+*tif
+*.gpkg
+*.shp
+*.dbf
+*.shx
+
+# QGIS temp files
+*.qgis~
+*.qgz~
+
+#OS files
+.DS_Store
+Thumbs.db
