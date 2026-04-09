@@ -24,7 +24,7 @@ Flood susceptibility was derived using three main factors: elevation, slope and 
 - Flat terrain areas were less likely to drain accumulated water.
 - Areas near rivers were assigned a higher risk.
 
-These factors were combined into a classified raster with four levels: low, slight, moderate and high susceptibility. The rationale behind the simple model can be found in ....
+These factors were combined into a classified raster with four levels: low, slight, moderate and high susceptibility. The rationale behind the simple model can be found [here](./docs/README.md)
 
 ### 2. Infrastructure Exposure
 Infrastructure layers (buildings, roads, schools and hospitals) were overlaid with flood susceptibility zones.
@@ -109,7 +109,7 @@ You can access the data here: [Nairobi Flood Analysis Files](https://drive.googl
 To reproduce the analysis:
 1. Download the full dataset from the link above.
 2. Place the data folder in the root project directory so that the structure matches the original layout.
-3. Open QGIS project file located in the ```qgis./```folder.
+3. Open QGIS project file located in the ```qgis/```folder.
 4. Ensure all data paths are correctly linked (you may need to relink layers if paths change).
 
 ### Notes
