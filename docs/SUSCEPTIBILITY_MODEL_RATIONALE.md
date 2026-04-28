@@ -2,7 +2,7 @@
 
 Flooding is a recurring risk in urban areas with complex terrain and dense populations. Nairobi County presents a mix of low-lying regions, river systems and rapidly-growing settlements, making it an ideal case for spatial flood risk analysis.
 
-This project aims to assess flood susceptibility and evaluate its impact on infrastructure and population. In this notebook, I document how I developed and presented the rationale behind the susceptibility model and how exposure was determined using the QGIS tool.
+This project aims to assess flood susceptibility and evaluate its impact on infrastructure and population. In this notebook, I document how I developed the rationale behind the susceptibility model and how exposure was determined using the QGIS tool.
 
  ## The Susceptibility Model
 
