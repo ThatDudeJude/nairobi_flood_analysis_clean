@@ -2,15 +2,14 @@
 
 Flooding is a recurring risk in urban areas with complex terrain and dense populations. Nairobi County presents a mix of low-lying regions, river systems and rapidly-growing settlements, making it an ideal case for spatial flood risk analysis.
 
-This project aims to assess flood suscpetibility and evaluate its impact on infrastructure and population. In this notebook, I document how I develop 
- and present the rationale behind the susceptibility model used and how exposure was determined using the QGIS tool.
+This project aims to assess flood susceptibility and evaluate its impact on infrastructure and population. In this notebook, I document how I developed and presented the rationale behind the susceptibility model and how exposure was determined using the QGIS tool.
 
  ## The Susceptibility Model
 
 A binary classification approach was used for elevation, slope and river proximity to maintain model simplicity and interpretability. While reclassification into multiple categories is possible, it was avoided to reduce subjectivity and prevent overcomplicating the model without strong empirical justification.
 
 ### 1.  Elevation Threshold selection
-The elevation threshold of $<1750\ m$) was selected to capture low-lying areas across Nairobi's west-east elevation gradient. Since river elevations vary significantly across the county, elevation alone was not used as a strict determinant; instead, it was combined with slope and proximity to rivers to better represent flood susceptibility.
+The elevation threshold of $<1750\ m$ was selected to capture low-lying areas across Nairobi's west-east elevation gradient. Since river elevations vary significantly across the county, elevation alone was not used as a strict determinant. Instead, it was combined with slope and proximity to rivers to better represent flood susceptibility.
 
 ```
 low_elevation_area = DEM < 1750 (threshold)
@@ -32,7 +31,7 @@ rive_flooding_zone = distance_from_river < 200
 ```
 
 
-Therefore, susceptibility was modeled using a simple additive approach combining low elevation, low slope and proximity to rivers, producing a 0 - 3 index representing increasing environmental risk.
+Therefore, susceptibility was modeled using a simple additive approach combining low elevation, low slope and proximity to rivers, producing a 0-3 index representing increasing environmental risk.
 
 ```
 susceptibility = elevation + slope + river_distance

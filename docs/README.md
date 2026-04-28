@@ -12,9 +12,9 @@ The analysis is structured into four key components: Flood susceptibility, infra
 - Highlight critical hotspots where risk and exposure overlap.
 
 ## Data Sources
-- OpenStreetMap (buildings, roads, schools, hospitals) [1]
-- WorldPop (population data) [2]
-- DEM (elevation data) [3]
+- OpenStreetMap contibutors (buildings, roads, schools, hospitals)
+- WorldPop (population data)
+- SRTM (NASA) (elevation data)
 
 ## Methodology
 ### 1. Flood Susceptibility
@@ -24,7 +24,7 @@ Flood susceptibility was derived using three main factors: elevation, slope and 
 - Flat terrain areas were less likely to drain accumulated water.
 - Areas near rivers were assigned a higher risk.
 
-These factors were combined into a classified raster with four levels: low, slight, moderate and high susceptibility. The rationale behind the simple model can be found in ....
+These factors were combined into a classified raster with four levels: low, slight, moderate and high susceptibility. The rationale behind the simple model can be found [here](./SUSCEPTIBILITY_MODEL_RATIONALE.md).
 
 ### 2. Infrastructure Exposure
 Infrastructure layers (buildings, roads, schools and hospitals) were overlaid with flood susceptibility zones.
